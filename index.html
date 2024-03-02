@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nay's Candy</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="banner"><img id="logo" src="assets/nays-logo.jpg"><img id="basket" src="assets/basket.png"></div>
+
+    <div id="basket-list"></div>
+
+    <div class="container"></div>
+
+    <dialog id="order-form">
+        <i id='f-name'></i>
+        <p>Stock: <strong id='stock'></strong></p>
+        <form>
+            <label for="order" id="order-label">Order: </label>
+            <input id="order" type="number" min="0" value="2">
+
+            <div>
+                <button id="cancelBtn" value="cancel" formmethod="dialog">Ok</button>
+                <button id="confirmBtn" value="default" formmethod="dialog">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog id="order-tally"></dialog>
+    <dialog id="construction-notice">We cannot handle orders through this web app yet.
+        <form>
+            <button formmethod="dialog">Ok</button>
+        </form>
+    </dialog>
+
+    <div id="dot"></div>
+    
+    <script type="module" src="assets/script.js"></script>
+</body>
+</html>
